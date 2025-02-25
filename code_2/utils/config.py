@@ -16,8 +16,8 @@ ref = 1.0
 amin = 1e-10
 top_db = None
 
-df = pd.read_csv(r"C:\Users\imspr\ESC-50-master\meta\esc50.csv") # path to csv file
-audio_folder = r"C:\Users\imspr\ESC-50-master\audio" #path to audio
+df = pd.read_csv(r"C:\Users\path\ESC-50-master\meta\esc50.csv") # path to csv file
+audio_folder = r"C:\Users\path\ESC-50-master\audio" #path to audio
 
 labels = list(df['category'].unique())
 lb_to_idx = dict(zip(df['category'], df['target']))
