@@ -17,7 +17,7 @@ from config import (sample_rate, classes_num, mel_bins, fmin, fmax, window_size,
 from losses import get_loss_func
 from pytorch_utils import move_data_to_device, do_mixup
 from utilities import (create_folder, get_filename, create_logging, StatisticsContainer, Mixup)
-from data_generator import GtzanDataset, TrainSampler, EvaluateSampler, collate_fn
+from data_generator import ESC50Dataset, TrainSampler, EvaluateSampler, collate_fn
 from models import Transfer_Cnn14
 from evaluate import Evaluator
 
@@ -97,7 +97,7 @@ def train(args):
     print('GPU number: {}'.format(torch.cuda.device_count()))
     model = torch.nn.DataParallel(model)
 
-    dataset = GtzanDataset()
+    dataset = ESC50Dataset()
 
     # Data generator
     train_sampler = TrainSampler(
