@@ -10,7 +10,7 @@ Path to Audio files
 
 In Anaconda Prompt:
 3) Setup variables
-set DATASET_DIR=C:\Users\Users\path\audio #(not actually used here since it defined in config)
+set DATASET_DIR=C:\Users\Users\path\audio #(not actually used here since it is defined in config)
 
 set WORKSPACE=C:\Users\path\ESC-50-CODE
 
