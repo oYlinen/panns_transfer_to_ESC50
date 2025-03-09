@@ -12,7 +12,7 @@ import config
 from utilities import int16_to_float32
 
 
-class GtzanDataset(object):
+class ESC50Dataset(object):
     def __init__(self):
         """This class takes the meta of an audio clip as input, and return 
         the waveform and target of the audio clip. This class is used by DataLoader. 
