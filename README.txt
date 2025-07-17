@@ -1,3 +1,6 @@
+Most of the code is not made by me. This was a school project to edit https://github.com/qiuqiangkong/panns_transfer_to_gtzan to finetune/test with ESC50 dataset.
+
+
 # panns_transfer_to_ESC50
 
 
